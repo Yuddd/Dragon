@@ -1,0 +1,46 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="627" Width="402">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="397" Width="375" Margin="10,191,0,0" VerticalAlignment="Top" >
+            <Button Content="％" Height="58" Canvas.Left="10" Canvas.Top="10" Width="84" Click="Bt_quyu">
+                
+            </Button>
+            <Button Content="sqrt" Height="58" Canvas.Left="99" Canvas.Top="10" Width="84" Click="Bt_sqrt"/>
+            <Button Content="x²" Height="58" Canvas.Left="191" Canvas.Top="10" Width="84" Click="Bt_x2"/>
+            <Button Content="1/x" Height="58" Canvas.Left="281" Canvas.Top="10" Width="84" Click="Bt_1x"/>
+            <Button Content="CE" Height="58" Canvas.Left="10" Canvas.Top="73" Width="84" Click="Bt_ce"/>
+            <Button Content="C" Height="58" Canvas.Left="99" Canvas.Top="73" Width="84" Click="Bt_c"/>
+            <Button Content="del" Height="58" Canvas.Left="191" Canvas.Top="73" Width="84" Click="Bt_del"/>
+            <Button Content="/" Height="58" Canvas.Left="281" Canvas.Top="73" Width="84" Click="Bt_except"/>
+            <Button Content="7" Height="58" Canvas.Left="10" Canvas.Top="136" Width="84" Click="Bt_num"/>
+            <Button Content="8" Height="58" Canvas.Left="99" Canvas.Top="136" Width="84" Click="Bt_num"/>
+            <Button  Content="9" Height="58" Canvas.Left="191" Canvas.Top="136" Width="84" Click="Bt_num"/>
+            <Button Content="*" Height="58" Canvas.Left="281" Canvas.Top="136" Width="84" Click="Bt_except"/>
+            <Button Content="4" Height="58" Canvas.Left="10" Canvas.Top="199" Width="84" Click="Bt_num"/>
+            <Button Content="5" Height="58" Canvas.Left="99" Canvas.Top="199" Width="84" Click="Bt_num"/>
+            <Button Content="6" Height="58" Canvas.Left="191" Canvas.Top="199" Width="84" Click="Bt_num"/>
+            <Button Content="-" Height="58" Canvas.Left="281" Canvas.Top="199" Width="84" Click="Bt_except"/>
+            <Button Content="1" Height="58" Canvas.Left="10" Canvas.Top="265" Width="84" Click="Bt_num"/>
+            <Button Content="2" Height="58" Canvas.Left="99" Canvas.Top="265" Width="84" Click="Bt_num"/>
+            <Button Content="3" Height="58" Canvas.Left="191" Canvas.Top="265" Width="84" Click="Bt_num"/>
+            <Button Content="+" Height="58" Canvas.Left="281" Canvas.Top="265" Width="84" Click="Bt_except"/>
+            <Button Content="±" Height="58" Canvas.Left="10" Canvas.Top="331" Width="84" Click="Bt_invese"/>
+            <Button Content="0" Height="58" Canvas.Left="99" Canvas.Top="331" Width="84" Click="Bt_0" DataContext="0"/>
+            <Button Content="." Height="58" Canvas.Left="191" Canvas.Top="331" Width="84" Click="Bt_dot"/>
+            <Button Content="=" Height="58" Canvas.Left="281" Canvas.Top="331" Width="84" Click="Bt_equals"/>
+        </Canvas>
+        <TextBox  Name="input" HorizontalAlignment="Left" Height="88" Margin="111,98,0,0" TextWrapping="Wrap" TextAlignment="Right" VerticalAlignment="Top" Width="242" IsReadOnly="True"/>
+        <Label Name="oldinput" HorizontalAlignment="Left" Margin="135,45,0,0" VerticalAlignment="Top" Height="48" Width="218" HorizontalContentAlignment="Right"/>
+
+
+
+
+
+    </Grid>
+</Window>
